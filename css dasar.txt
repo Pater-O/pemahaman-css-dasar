@@ -1,4 +1,4 @@
-                                                                    Video 5CSS Dasar - 5 - Text Styling
+                                                                    Video 5CSS Dasar - 5 - Font Styling
 1.FONT STYLING
   * font-family: (nama font),(generic family); {Mengatur Jenis font yang akan digunakan}
   * font-size: (px),(%),(em); {Mengatur Ukuran Font}
@@ -11,3 +11,14 @@
        *body {
                  Font : Font-style Font-variant Font-weight Font-size/Line-height Font-family;
               }
+
+                                                                    Video 5CSS Dasar - 5 - Text Styling
+2.TEXT STYLING
+  * color: (nama warna),(hexa decimal),(rgb); {memberikan warna pada tulisan}
+  * text-align: (left),(right),(center),(justify); {mengatur format paragraf / text}
+  * text-indent: (px),(%); {memberi indentasi pada paragraf / text}
+  * text-decoration: (none),(underline),(overline),(line-through); {mengatur dekorasi pada text}
+  * text-transform: (none),(lowercase),(uppercase),(capitalize); {Mengubah jenis huruf (besar,kecil / kapital)}
+  * letter-spacing: (normal),(px); {mengatur spasi antar huruf}
+  * word-spacing: (normal),(px); {mengatur spasi antar kata}
+
