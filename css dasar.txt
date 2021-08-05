@@ -1,4 +1,4 @@
-                                                                    Video 5CSS Dasar - 5 - Font Styling
+                                                                    Video 4CSS Dasar - 4 - Font Styling
 1.FONT STYLING
   * font-family: (nama font),(generic family); {Mengatur Jenis font yang akan digunakan}
   * font-size: (px),(%),(em); {Mengatur Ukuran Font}
