@@ -1,0 +1,13 @@
+                                                                    Video 5CSS Dasar - 5 - Text Styling
+1.FONT STYLING
+  * font-family: (nama font),(generic family); {Mengatur Jenis font yang akan digunakan}
+  * font-size: (px),(%),(em); {Mengatur Ukuran Font}
+  * font-weight: (lighter),(normal),(100-900),(bold),(border); {mengatur Ketebalan Font}
+  * font-variant: (normal),(small-caps);{Mengubah Font menjadi Small Caps}
+  * Font-style: (normal),(italic),(oblique);{Mengubah font menjadi bercetak Miring}
+  * Line-height: (normal),(px),(em); {Mengatur Jarak antar baris}
+
+     Penggabungan font styling
+       *body {
+                 Font : Font-style Font-variant Font-weight Font-size/Line-height Font-family;
+              }
