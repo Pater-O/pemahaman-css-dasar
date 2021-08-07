@@ -23,12 +23,67 @@
   * word-spacing: (normal),(px); {mengatur spasi antar kata}
   
   
+                                                                     Video 6CSS Dasar - 6 - Background
+3.BACKGROUND
+  * background-color: (nama warna),(hexadesimal); {Mengatur warna pada BG}
+  * background-image: url(nama image/lokasi);{mengatur gambar yg akan digunakan pada BG}
+  * background-position:  topleft,topcenter,topright,centerleft,centercenter,centerright,bottomleft
+                                 ,bottomcenter,botomright,x%y%,x-posy-pos;{mengatur posisi gambar pd BG}
+         note: jika menggunakan background-repeat diluar no repeat maka background-position tdk bisa digunakan.
+  * background-repeat: (repeat-y),(no-repeat),(repeat),(repeat-x);{mengatur jenis perulangan gambar pd BG}
+
+      Penggabungan BACKGROUND
+          *body {
+                  background: background-color background-image background-position background-repeat;
+           }
+
+                                                                      video 7CSS Dasar - 7 - Selector
+4.SELECTORS
+  - elemen HTML *memiliki specificity(berat) 1x lipat
+    elemet html{ properti}
+ 	   note: koma artinya memilih properti yg sama
+		    	spasi artinya didalam
+  - id *memiliki specificity(berat) 100x lipat
+   #elemen id html {properti}
+	   note: 1 element tidak boleh lebih dari 1 id
+              digunakan juga untuk javascript
+              sebaiknya tidak digunakan untuk css
+  - class *memiliki specificity(berat) 10x lipat
+   .elemen class html {properti}
+	  note: 1 element boleh lebih dari 1 id
+  - complex selector
+          note: specificity adalah elemen yg semakin besar nilainya akan didahulukan
+
+                                                                  video 8CSS Dasar - 8 - Pseudo Class
+5.PSEUDO CLASS {style pada elemen html akan aktif dalam keadaan tertentu saja}
+  - berhubungan denga link
+   :link {style default pada sebuah link/a yang memiliki hreff}
+    .elemen class html:link {properti}
+  :hover {style ketika kursor mouse berada diatas sebuah link/element}
+    .elemen class html:hover {properti}
+  :active {style ketika sebuah link di-klik (keadaan aktif)
+   .elemen class html:active {properti}
+  :visited {style ketika sebuah link sudah pernah dikunjungi sebelumnya(menggunakan browser yg sama)}
+   .elemen class html:visited {properti}
+ - berhubungan dengan posisi elemen (elemen didalam elemen/parent) part 1
+  :first-child {memilih elemen pertama dari sebuah parent (element pembungkusnya)}
+  :last-child {memilih elemen terakhir dari sebuah parent (element pembungkusnya)}
+  :nth-child(n) {memilih elemen ke-n dari sebuah parent (element pembungkusnya)}
+       note: n bisa berarti urutan (1), (2),... atau pola (2n),(3n+2),(4n-1) atau ganjil genap (even/genap)&(odd/ganjl)
+ - berhubungan dengan posisi elemen part 2
+  :first-of-type {memilih elemen pertama dari sebuah jenis/tipe tag}
+  :last-of-type {memilih elemen terakhir dari sebuah jenis/tipe tag}
+
+
+             justinfo 
+           inherit: elemen yang akan mengikuti / mewarisi dari elemen part
+=======
   
   
   
                                                          CSS LAYOUTING
 
-                                                                                          video 1CSS Layouting - #1 Display
+                                                                  video 1CSS Layouting - #1 Display
 1.display { Mengatur prilaku dari semua kotak pada browser}
                    note: <div> display defaultnya block
                           <span> display defaultnya inline
@@ -68,7 +123,7 @@
             display:none;
                      note: -Digunakan untuk  menghapus/menghilangkan sebuah elemen
 
-                                                                      video 2CSS Layouting - #2 Dimensi & Overflow
+                                                          video 2CSS Layouting - #2 Dimensi & Overflow
 2.dimensi&overflow
        *dimensi
              width: (px),(%),(in,cm,mm,pt,pc); {mengatur lebar}
@@ -92,7 +147,7 @@
 
 
 3.box model
-                                                                    video 4CSS Layouting - #4 Box Model - Margin
+                                                       video 4CSS Layouting - #4 Box Model - Margin
    *margin {Area Diluar border}
         margin-top:(px);
         margin-right:(px);
@@ -113,6 +168,5 @@
 
              shorthand
                           margin: top(px) right(px) bottom(px) left(px);
-
 
 
