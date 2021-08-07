@@ -21,4 +21,98 @@
   * text-transform: (none),(lowercase),(uppercase),(capitalize); {Mengubah jenis huruf (besar,kecil / kapital)}
   * letter-spacing: (normal),(px); {mengatur spasi antar huruf}
   * word-spacing: (normal),(px); {mengatur spasi antar kata}
+  
+  
+  
+  
+  
+                                                         CSS LAYOUTING
+
+                                                                                          video 1CSS Layouting - #1 Display
+1.display { Mengatur prilaku dari semua kotak pada browser}
+                   note: <div> display defaultnya block
+                          <span> display defaultnya inline
+ 
+        * inline  
+              display: inline;
+                   elementnya :
+                     (b,strong,i,em,a,span,sub,sup,button,input,label,select,textarea,dll)
+                     note:  - Secara default tidak menambahkan baris baru ketika di buat 
+                             - Lebar dan tinggi defaultnya sesuai dengan kontentnya
+                             - Tidak bisa mengatur lebar dan tingginya
+                             - Margin dan padding hanya mempengaruhi elemen secara  
+                                horizontal bukan vertikal    
+                                
+
+       * inline-block
+             display: inline-block;
+                     note: - Tidak ada element yg secara defaut memiliki properti display    
+                                ini
+                            - Harus diubah secara manual untuk bisa menggunakan 
+                               properti tsb
+                            - Prilaku dasar sama seperti elemen inline, Perbedaannya 
+                               dapat diatur tinggi dan lebarnya
+                               
+
+       * block
+             display: block;
+                  elementnya (h1-h6,p,ol,ul,li,form,hr,div,dll)
+                      note: - Secara default menambahkan baris baru ketika di buat
+                             - Jika tidak diatur lebarnya, maka lebar default dari element 
+                                block akan memenuhi lebar dari browser /parentnya
+                             - Bisa mengatur tinggi dan lebar dari element block
+                             - Dapat menyimpan tag dengan elemet inline, inline-Block, 
+                                atau bahkan element block lagi  
+ 
+        * none
+            display:none;
+                     note: -Digunakan untuk  menghapus/menghilangkan sebuah elemen
+
+                                                                      video 2CSS Layouting - #2 Dimensi & Overflow
+2.dimensi&overflow
+       *dimensi
+             width: (px),(%),(in,cm,mm,pt,pc); {mengatur lebar}
+             height: (px),(%),(in,cm,mm,pt,pc);{mengatur tinggi}
+
+        *overflow {mengatur konten yang keluar dari parentnya}
+              visible { konten yg keluar dari parentnya otomatis diperlihatkan}
+                   overflow: visible; 
+                       note: sudah default tampilan
+
+              auto { menambahkan scroll ketika kontent keluar dari parentny}
+                   overflow: auto;
+
+              hidden { Konten yang keluar dari parentnya akan disembunyikan}
+                   overflow: hidden;
+
+              scroll { konten yang sudah sesuai maupun keluar dari parentny akan 
+                       menambahkan scroll}
+                   overflow: scroll;
+
+
+
+3.box model
+                                                                    video 4CSS Layouting - #4 Box Model - Margin
+   *margin {Area Diluar border}
+        margin-top:(px);
+        margin-right:(px);
+        margin-bottom:(px);
+        margin-left:(px);
+        margin:(px);
+        - overlapping margin
+                 note vertikal:- margin tidak saling menambahkan khusus yg vertikal
+                                  - margin yg diambil yg paling besar ukurannya
+                 note horizontal: -margin akan menjumlahkan kiri dan kanannya
+        - negatif margin
+              margin-(jenis): -(px);
+
+        - auto (margin yang berfungsi memposisikan ditengah halaman}
+           margin-left: auto;
+           margin-right: auto;
+                 note: hanya bisa left dan right
+
+             shorthand
+                          margin: top(px) right(px) bottom(px) left(px);
+
+
 
