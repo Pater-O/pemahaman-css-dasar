@@ -147,7 +147,7 @@
 
 
 3.box model
-                                                       video 4CSS Layouting - #4 Box Model - Margin
+                                                           video 4CSS Layouting - #4 Box Model - Margin
    *margin {Area Diluar border}
         margin-top:(px);
         margin-right:(px);
@@ -168,5 +168,31 @@
 
              shorthand
                           margin: top(px) right(px) bottom(px) left(px);
+			  
+                                    video 5CSS Layouting - #5 Box Model - Padding, Border & Box Sizing
+   *padding {Area diantara content dan border}
+         padding-top:(px);
+         padding-right:(px);
+         padding-bottom:(px);
+         padding-left:(px);
+         padding:(px);
+                 note: - tidak bisa diberi nilai negatif
+                        - tidak memiliki nilai auto
+                        - mempengaruhi ukuran box yg dibuat
+
+   *border {Batas disekeliling content dan padding}
+         border-top:(px) (style) (color);
+         border-right:(px) (style) (color);
+         border-bottom:(px) (style) (color);
+         border-left:(px) (style) (color);
+         border:(px) (style) (color);
+                note: - jenis style= solid, dotted,dashed,double
+                       - mempengaruhi ukuran box yg dibuat
+
+         box-sizing {Membuat lebar boxnya tidak akan berubah}
+                  box-sizing: border-box;
+                
+  *content {isi didalam box, bisa berupa text atau gambar}
+
 
 
