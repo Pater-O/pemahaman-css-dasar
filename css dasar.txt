@@ -169,7 +169,7 @@
              shorthand
                           margin: top(px) right(px) bottom(px) left(px);
 			  
-                                    video 5CSS Layouting - #5 Box Model - Padding, Border & Box Sizing
+                                                        video 5CSS Layouting - #5 Box Model - Padding, Border & Box Sizing
    *padding {Area diantara content dan border}
          padding-top:(px);
          padding-right:(px);
@@ -193,6 +193,80 @@
                   box-sizing: border-box;
                 
   *content {isi didalam box, bisa berupa text atau gambar}
+  
+  #css reset
+         mayerweb.com/eric/tools/css/reset/
+                  nb:simpan di kolom paling atas pada css
+
+
+
+                                                                                            video 8CSS Layouting - #8 Float
+4. float {Mengatur posisi sebuah element  untuk berada di sebelah kiri/kanan dari 
+            parent/pembungkusnya}
+
+              none
+                     float: none;
+
+              left {posisi elemen berada di kiri dari paret/pembungkusnya}
+                    float: left;
+
+             right {posisi elemen berada di kanan dari paret/pembungkusnya}
+                    float: right;
+                                        note: untuk  float wajib dibersihkan menggunakan 
+                                               micro clearfix(nicolasgallagher.com/micro-
+                                               clearfix-hack/).  masukan kode "cf" ke element /div
+                                               yang akan dibershikan floatnya. karena devaultnya element pembungkus
+                                               akan colapse jika tidak menggunakan metode clear
+
+5. position {memungkinkan kita menggeserkan sebuah elemen tanpa mempengaruhi elemen sekitarnya}
+                                                                video 11CSS Layouting - #11 Position - Static & Relative
+           static
+                 position: static;
+                                        note: default untuk position adalah static
+
+           relative {mengatur posisi element untuk keluar dari dimensinya/maju 1 
+                       dimensi}
+                 position: relative;
+                                           note:-memiliki akses untuk menggunakan properti top:,left:,bottom:,right:
+                                                 -saat menggunakan properti top,left,bottom dan 
+                                                  right, ruang yg sebelumnya ditempati oleh 
+                                                  element tersebut masih ada
+                                                 -saat berpindah tempat, elementnya akan 
+                                                  bergerak relatif terhadap posisi semula-nya
+                                                 -jika diberikan properti top: 0; dan left: 0; 
+                                                  element tidak akan berubah posisinya
+                                                 -position relative lebih difungsikan untuk keluar dari dimensinya saja
+                                                   karena yg lebih sering digunakan untuk menggerakan adalah position absolute
+                                                                video 12CSS Layouting - #12 Position - Absolute & Fixed
+           absolute
+                position: absolute;
+                                        note:  -saat menggunakan properti top,left,bottom 
+                                                   dan right, ruang yg sebelumnya ditempati  
+                                                   oleh element tersebut dianggap tidak ada oleh 
+                                                   element statik
+                                                 -saat berpindah tempat, elementnya akan 
+                                                   bergerak relatif terhadap element parentnya, 
+                                                   selama element parent-nya memiliki posisi 
+                                                   yang non static
+                                                 -jika diberikan properti top: 0; dan left: 0; 
+                                                   element akan berada diujung kiri atas dari 
+                                                   element parent-nya
+
+            fixed
+                 position: fixed;
+                                        note: -saat berpindah tempat, elementnya akan 
+                                                   bergerak relatif terhadap windows browser 
+                                                   walaupun element parent-nya berada di 
+                                                   posisi non static
+                                                 -ketika di scroll halamannya , posisi elemet 
+                                                   tetap terkunci diposisinya/tidak bergeser
+
+          z-index {mengatur tumpukan dari element yang diberikan element non-
+                      static}
+                z-index: (nilai element);
+                                         note: -semakin besar nilai z-index maka posisi 
+                                                   element semakin di depan/maju
+
 
 
 
