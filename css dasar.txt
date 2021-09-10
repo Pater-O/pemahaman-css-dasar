@@ -122,6 +122,57 @@
         * none
             display:none;
                      note: -Digunakan untuk  menghapus/menghilangkan sebuah elemen
+		     
+		     
+       * flex {membuat prilaku elemen sejajar kekanan}
+           display: flex;
+                     note: - flex yang ada di container digunakan untuk membuat tampilan menjadi flex untuk setiap 
+                               itemnya
+
+           Properti pada flex:
+                flex wrap {mengatur posisi turun kebawah utk item yg over di dalam display flex container jika diberikan width}
+                 -nowrap {devault untuk flex yg akan membuat itemnya selalu sejajar kekanan}
+                          flex-wrap: nowrap;
+                 -wrap {membuat itemnya akan turun kebawah jika tidak cukup karena ukuran width sudah diatur}
+                         flex-wrap: wrap;
+                 -wrapreverse {membuat itemnya akan terbalik untuk yg baris diawalnya atas menjadi dibawah}
+                         flex-wrap: wrap-reverese;
+
+                flex direction {mengatur arah pada setiap item yg ada di dalam display flex container}
+                 -row {devault untuk flex yg arah itemnya sejajar dari kiri ke kanan}
+                         flex-direction: row;
+                 -row reverse {membuat arah item berubah dari kanan ke kiri}
+                         flex-direction: row-reverse;
+                 -column {membuat arah item vertikal dari atas kebawah}
+                         flex-direction: column;
+                 -column reverese {membuat arah item vertikal dari bawah ke atas}
+                         flex-direction: column-reverse;
+
+               justify content {mengatur posisi dari item yg ada didalam display flex containernya secara horizontal}
+                 -start {secara devault posisi item sudah berada dipojok kiri pada flex containernya}      
+                        justify-content: flex-start;
+                 -end {posisi item berada dipojok kanan pada flex containernya}
+                        justify-content: flex-end;
+                 -center {posisi item berada ditengah pada flex containernya}
+                        justify-content: center;
+                 -space between {selain dari pojok flex containernya,posisi diatur untuk jarak yg sama pada tiap item}
+                       justify-content: space-between;
+                 -space around {setiap posisi itemnya memiliki jarak yg sama}
+                       justify-content: space-around;
+
+              align items {mengatur posisi dari item yg ada didalam display flex containernya secara vertikal}
+                  -strectch {secara devault memenuhi ukuran height pada flex containernya}
+                       align-items: strectch;
+                  -start {posisi item berada diatas pada flex containernya}
+                       align-items: flex-start;
+                  -end {posisi item berada dibawah pada flex containernya}
+                       align-items: flex-end;
+                  -center {posisi item berada ditengah pada flex containernya}
+                      align-items: center;
+
+
+		     
+		     
 
                                                           video 2CSS Layouting - #2 Dimensi & Overflow
 2.dimensi&overflow
